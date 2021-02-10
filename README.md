@@ -25,7 +25,9 @@ $ pipenv shell
 #### 3. Instale as dependêcias do projeto
 
 $ pipenv install selenium==3.14.1
+
 $ pipenv install webdriver-manager
+
 $ pipenv install numpy==1.19.5
 
 #### 4. Ainda no terminal, execute o seguinte comando:
