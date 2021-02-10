@@ -14,37 +14,37 @@ class Automation2:
         blog = self.driver.find_element_by_partial_link_text("Blog")
         blog.click()
 
-        titulo = self.driver.find_elements_by_xpath(
+        title = self.driver.find_elements_by_xpath(
             '//h2[@itemprop="headline"]')[2].text
 
-        dia = self.driver.find_elements_by_xpath(
+        day = self.driver.find_elements_by_xpath(
             '//span[@class="date-day"]')[2].text
-        mes = self.driver.find_elements_by_xpath(
+        month = self.driver.find_elements_by_xpath(
             '//span[@class="date-month"]')[2].text
-        ano = self.driver.find_elements_by_xpath(
+        year = self.driver.find_elements_by_xpath(
             '//span[@class="date-year"]')[2].text
-        data = dia+'-'+mes+'-'+ano
+        date = day+'-'+month+'-'+year
 
-        acessar_post = self.driver.find_elements_by_xpath(
+        access_post = self.driver.find_elements_by_xpath(
             '//h2[@itemprop="headline"]')[1]
-        acessar_post.click()
-        autor1 = self.driver.find_elements_by_xpath(
+        access_post.click()
+        author1 = self.driver.find_elements_by_xpath(
             '//span[@itemprop="name"]')[2].text
 
-        proximo = self.driver.find_element_by_partial_link_text(
+        go_next = self.driver.find_element_by_partial_link_text(
             "Post seguinte ")
-        proximo.click()
+        go_next.click()
 
-        titulo_post_seguinte = self.driver.find_elements_by_xpath(
+        next_post = self.driver.find_elements_by_xpath(
             '//h1[@itemprop="headline"]')[0].text
-        autor2 = self.driver.find_elements_by_xpath(
+        author2 = self.driver.find_elements_by_xpath(
             '//span[@itemprop="name"]')[2].text
 
-        print("Titulo do terceiro post:", titulo)
-        print("Data do terceiro post:", data)
-        print("Autor do segundo post:", autor1)
-        print("Titulo do post seguinte:", titulo_post_seguinte)
-        print("Autor post seguinte:", autor2)
+        print("Titulo do terceiro post:", title)
+        print("Data do terceiro post:", date)
+        print("Autor do segundo post:", author1)
+        print("Titulo do post seguinte:", next_post)
+        print("Autor post seguinte:", author2)
 
 
 if __name__ == '__main__':
