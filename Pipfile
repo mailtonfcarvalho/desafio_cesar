@@ -8,6 +8,7 @@ verify_ssl = true
 [packages]
 selenium = "==3.14.1"
 webdriver-manager = "==3.3.0"
+numpy = "==1.19.5"
 
 [requires]
 python_version = "3.6"
