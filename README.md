@@ -26,7 +26,7 @@ $ pipenv shell
 
 $ pipenv install selenium==3.14.1
 
-$ pipenv install webdriver-manager
+$ pipenv install webdriver-manager==3.3.0
 
 $ pipenv install numpy==1.19.5
 
