@@ -49,5 +49,5 @@ class Automation2:
 
 if __name__ == '__main__':
 
-    user = automation2()
+    user = Automation2()
     user.information_retrieval()
